@@ -1,0 +1,132 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/*  Primary */
+	--color-blue: hsl(246, 80%, 60%);
+	--light-red-work: hsl(15, 100%, 70%);
+	--color-soft-blue: hsl(195, 74%, 62%);
+	--light-red-study: hsl(348, 100%, 68%);
+	--lime-green-exercise: hsl(145, 58%, 55%);
+	--violet-social: hsl(264, 64%, 52%);
+	--soft-orange-self-care: hsl(43, 84%, 65%);
+
+	/*  Neutral */
+
+	--very-dark-blue: hsl(226, 43%, 10%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+	--pale-blue: hsl(236, 100%, 87%);
+
+	/*  Font */
+
+	--title-principals-fontSize: 18px;
+	--font-Family: 'Rubik', sans-serif;
+}
+
+body {
+	background-color: var(--very-dark-blue);
+	color: white;
+	font-family: var(--font-Family);
+}
+
+header, section {
+	margin: auto;
+	margin-top: 50px;
+	width: 85vw;
+	height: auto;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.profile--ImgAndName {
+	position: relative;
+	display: flex;
+	background-color: var(--color-blue);
+	width: 100%;
+	height: 150px;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 20px;
+	margin-bottom: -20px;
+}
+
+.profile--ImgAndName h2 {
+	margin-top: 5px;
+	font-weight: 400;
+}
+
+.avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 3px solid white;
+	overflow: hidden;
+}
+
+#imgprofile {
+	width: inherit;
+}
+
+nav {
+	display: flex;
+	width: inherit;
+	height: 100px;
+	background-color: var(--dark-blue);
+	border-radius: 0 0 20px 20px;
+}
+
+nav ul {
+	
+	width: inherit;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.menu-item {
+	position: relative;
+	color: var(--color-blue);
+	cursor:pointer;
+	z-index: 10;
+}
+
+.menu-item:hover {
+	color: white;
+}
+
+.menu-item:active{
+	color: var(--pale-blue);
+}
+
+.square {
+	margin-top: 10px;
+	display: block;
+	width: inherit;
+	height: 280px;
+	background-color: burlywood;
+}
+
+.square--content {
+	background-color: var(--dark-blue);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
