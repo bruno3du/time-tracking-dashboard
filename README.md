@@ -1,3 +1,19 @@
+# Time Tracking Dashboard
+
+É uma maneira de você trackear os principais momentos da sua vida, e ter um controle maior do que você faz.
+Quem nunca parou para pensar quanto tempo está passando fazendo certas tarefas enquanto faz pouco de outros? 
+Esse sistema pode te auxiliar a visualizar melhor suas principais atividades.
+
+Visite você mesmo o protótipo: https://bruno3du.github.io/time-tracking-dashboard/
+
+## Desktop
+<img src="website-time-tracking-dashboard.png">
+
+## Mobile
+<div align="center">
+  <img src="web-time-tracking-dashboard-mobile.png">
+</div>
+
 
 ### Feito com:
 
@@ -10,9 +26,6 @@
 - Consumo de API
 
 ### Oque eu aprendi
-
-***Need some change description***
-**In Progress**
 
 Consumir API com JavaScript puro, a famigerada, Vanila JS. Criar estrutura a qual vai ser consumida dentro das especificidade da linguagem. O que é um desafio, já que tem que construir alguns de seus elementos do zero, sem nenhuma biblioteca para auxiliar.
 
