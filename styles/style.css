@@ -35,13 +35,15 @@ body {
 	background-color: var(--very-dark-blue);
 	color: white;
 	font-family: var(--font-Family);
+	height: auto;
 }
 
-header, section {
+header,
+section {
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 24px;
+	margin-bottom: 24px;
 	width: 85vw;
-	height: auto;
 }
 
 header a {
@@ -53,7 +55,7 @@ header a {
 	display: flex;
 	background-color: var(--color-blue);
 	width: 100%;
-	height: 150px;
+	height: 140px;
 	justify-content: space-evenly;
 	align-items: center;
 	border-radius: 20px;
@@ -86,7 +88,6 @@ nav {
 }
 
 nav ul {
-	
 	width: inherit;
 	list-style: none;
 	display: flex;
@@ -98,7 +99,7 @@ nav ul {
 .menu-item {
 	position: relative;
 	color: var(--color-blue);
-	cursor:pointer;
+	cursor: pointer;
 	z-index: 10;
 }
 
@@ -106,20 +107,68 @@ nav ul {
 	color: white;
 }
 
-.menu-item:active{
+.menu-item:active {
 	color: var(--pale-blue);
 }
 
 .square {
-	margin-top: 10px;
+	margin-top: 24px;
 	display: block;
 	width: inherit;
-	height: 280px;
-	background-color: burlywood;
+	border-radius: 20px;
+}
+.square--border {
+	height: 40px;
+	overflow: hidden;
+	text-align: right;
+	padding-right: 15px;
 }
 
 .square--content {
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 120px;
+	padding: 10px 0 ;
 	background-color: var(--dark-blue);
+}
+
+
+.square--titleAndButton{
+	margin: 20px 20px
+}
+.square--timeAndPrevious{
+	margin: 0 20px;
+	margin-bottom: 30px;
+
+}
+.square--titleAndButton,
+.square--timeAndPrevious {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.square--title {
+	font-size: var(--title-principals-fontSize);
+	font-weight: 500;
+}
+
+.square--more {
+	font-size: 35px;
+	margin-top: -20px;
+	color: var(--pale-blue);
+}
+
+.square--time {
+	font-weight: 300;
+	font-size: 35px;
+	margin-top: -15px;
+}
+
+.square--previus{
+	color: var(--pale-blue);
 }
 
 .attribution {
@@ -129,4 +178,32 @@ nav ul {
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.icon-adjust{
+	margin-top: -10px;
+}
+
+#work{
+	background-color: var(--light-red-work);
+}
+
+
+#play{
+	background-color: var(--color-soft-blue);
+}
+
+#study{
+	background-color: var(--light-red-study);
+	
+}
+#exercise{
+	background-color: var(--lime-green-exercise);
+	
+}
+#social{
+	background-color: var(--violet-social);
+}
+#selfCare{
+	background-color: var(--soft-orange-self-care);
 }
