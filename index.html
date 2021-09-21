@@ -7,9 +7,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/style.css" />
-		<title>Front Mentor</title>
+		<title>Track</title>
 	</head>
 	<body>
+		<main>
 		<header>
 			<div class="profile--ImgAndName">
 				<div class="avatar">
@@ -26,9 +27,9 @@
 			</div>
 			<nav>
 				<ul>
-					<a href="#"><li class="menu-item">Daily</li></a>
-					<li class="menu-item">Weekly</li>
-					<li class="menu-item">Monthly</li>
+					<li id="daily" onclick="turnDaily()" class="menu-item">Daily</li>
+					<li id="weekly" onclick="turnWeekly()" class="menu-item">Weekly</li>
+					<li id="monthly" onclick="turnMonthly()" class="menu-item">Monthly</li>
 				</ul>
 			</nav>
 		</header>
@@ -45,11 +46,11 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Work</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-work" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-work" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
@@ -64,11 +65,11 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Play</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-play" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-play" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
@@ -84,11 +85,11 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Study</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-study" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-study" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
@@ -99,11 +100,11 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Exercise</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-exercise" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-exercise" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
@@ -118,11 +119,11 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Social</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-social" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-social" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
@@ -137,21 +138,22 @@
 				<div class="square--content">
 					<div class="square--titleAndButton">
 						<div class="square--title">Self Care</div>
-						<div class="square--more">...</div>
+						<div class="square--more"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg></div>
 					</div>
 					<div class="square--timeAndPrevious">
-						<div id="time-selfcare" class="square--time">5hrs</div>
-						<div class="square--previus">Last Week - 7hrs</div>
+						<div id="time-selfcare" class="square--time"></div>
+						<div class="square--previous"></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="attribution">
+	</main>
+		<!-- <div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="https://github.com/bruno3du">Bruno Eduardo</a>.
-		</div>
+		</div> -->
 		<script src="script.js"></script>
 	</body>
 </html>
